@@ -16,9 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mennt",
-  description:
-    "The AI website builder for small businesses. Describe what you want, and let AI handle the code.",
+  title: "Mennt agent Demo",
+  description: "A demo of the Mennt agent",
 };
 
 export default function RootLayout({
