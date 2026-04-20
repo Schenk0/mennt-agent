@@ -6,7 +6,7 @@ export function google() {
   1. Think: Think deeply about the problem and how to solve it.
   2. Plan: Plan out a step-by-step approach to solve the problem.
   3. Execute: Write the complete code to resolve the users request.
-  4. Validate: Run runBash with "npm run check" to check both lint and type errors after making code changes. Call getRuntimeDiagnostics to verify preview/dev-server health.
+  4. Validate: Run runBash with "pnpm run check" to check both lint and type errors after making code changes. Call getRuntimeDiagnostics to verify preview/dev-server health.
   5. Fix errors: If lint, type, or runtime errors appear, fix the issues and rerun the checks.
   7. Write a short summery of what you did, without mentioning anything technical.
 

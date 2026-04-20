@@ -39,7 +39,7 @@ function toolsInstructions() {
       Use only the available tools: writeFile, view, readFile, edit, editFile, listFiles, grep, deleteFile, runBash, getRuntimeDiagnostics, askQuestion.
       Do not mention tool internals in user-facing copy.
       When possible, perform changes immediately instead of asking for confirmation.
-      After finishing file edits, always run runBash with "npm run lint" and "npm run typecheck".
+      After finishing file edits, always run runBash with "pnpm run lint" and "pnpm run typecheck".
       Before finalizing, always run getRuntimeDiagnostics to inspect the preview terminal.
       If checks fail or terminal output shows errors, fix the issues and rerun until clean.
     </general_guidelines>
@@ -89,8 +89,8 @@ function toolsInstructions() {
 
     <runBash_tool>
       Use runBash to execute bash commands from the project root.
-      Prefer runBash for validation tasks such as "npm run lint" and "npm run typecheck".
-      Never run build/dev/start/preview/serve/watch commands (for example: npm run build, npm run dev, next build, vite dev).
+      Prefer runBash for validation tasks such as "pnpm run lint" and "pnpm run typecheck".
+      Never run build/dev/start/preview/serve/watch commands (for example: pnpm run build, pnpm run dev, next build, vite dev).
       Do not use runBash for broad directory exploration.
       Do not run recursive listing commands like "ls -R" for the whole project.
       Do not use piped ls/dir/tree + grep/findstr commands for discovery.
@@ -100,7 +100,7 @@ function toolsInstructions() {
     </runBash_tool>
 
     <getRuntimeDiagnostics_tool>
-      Use getRuntimeDiagnostics to fetch recent "npm run dev" output from the preview terminal.
+      Use getRuntimeDiagnostics to fetch recent "pnpm run dev" output from the preview terminal.
       Always call this tool before your final response.
       Read the returned output and treat runtime errors as blockers.
     </getRuntimeDiagnostics_tool>

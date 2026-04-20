@@ -82,8 +82,8 @@ export function codeGuidelines() {
 
     <validation>
       Before finalizing any implementation, always run:
-      - npm run lint
-      - npm run typecheck
+      - pnpm run lint
+      - pnpm run typecheck
       If lint/type errors appear, fix them and rerun the checks.
     </validation>
   </code_guidelines>

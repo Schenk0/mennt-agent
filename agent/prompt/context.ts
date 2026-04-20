@@ -5,6 +5,7 @@ export function context() {
   <context>
     <project>
       Mennt builds and updates website code in a Next.js App Router project with Tailwind CSS v3.
+      The project uses pnpm as its package manager.
       The project runs inside WebContainer for live preview during edits.
     </project>
 

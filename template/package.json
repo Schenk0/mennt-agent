@@ -9,7 +9,7 @@
     "lint": "next lint --max-warnings=0",
     "lint:fix": "next lint --fix",
     "typecheck": "tsc --noEmit",
-    "check": "npm run lint && npm run typecheck"
+    "check": "pnpm run lint && pnpm run typecheck"
   },
   "dependencies": {
     "next": "15.3.9",
