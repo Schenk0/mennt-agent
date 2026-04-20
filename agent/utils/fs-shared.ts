@@ -4,7 +4,7 @@ export const DEFAULT_MAX_OUTPUT_BYTES = 32 * 1024;
 export const DEFAULT_MAX_LINES = 2000;
 export const DEFAULT_MAX_LINE_LENGTH = 2000;
 
-const SKIP_DIRS = new Set(["node_modules", ".git"]);
+const SKIP_DIRS = new Set(["node_modules", ".git", ".next"]);
 
 const UTF8_ENCODER = new TextEncoder();
 

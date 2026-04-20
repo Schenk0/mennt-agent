@@ -248,6 +248,7 @@ async function searchWithRipgrep({
     "!**/node_modules/**",
     "--glob",
     "!**/.git/**",
+    "!**/.next/**",
   ];
   if (!respectIgnore) {
     args.push("--no-ignore");
