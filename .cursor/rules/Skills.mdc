@@ -1,0 +1,5 @@
+---
+alwaysApply: true
+---
+
+Always search for a skill related to the task you have been asked. All skills are located in the .agent/skills folder.

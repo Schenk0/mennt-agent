@@ -1,0 +1,6 @@
+---
+description: 
+alwaysApply: true
+---
+
+Always use Phosphor Icons. Ensure you use the suffix naming convention (e.g., <ChatIcon />) instead of the deprecated base names (e.g., <Chat />). Do not import them like: Chat as ChatIcon, just import the ChatIcon directly.

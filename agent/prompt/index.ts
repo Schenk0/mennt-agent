@@ -1,0 +1,1 @@
+export { generalSystemPrompt } from "./system";
