@@ -37,11 +37,10 @@ export function PreviewPanel({
   return (
     <div className="flex h-full flex-col bg-muted/30">
       {/* Browser-like top bar */}
-      <div className="flex h-10 shrink-0 items-center gap-2 border-b border-border bg-background px-3">
-        <div className="flex gap-1.5">
-          <span className="size-3 rounded-full bg-border" />
-          <span className="size-3 rounded-full bg-border" />
-          <span className="size-3 rounded-full bg-border" />
+      <div className="flex h-10 shrink-0 w-full items-center justify-center gap-2 border-b border-border bg-background px-3">
+
+        <div className="rounded-md bg-muted min-w-sm px-3 py-1 text-xs text-muted-foreground truncate">
+          {url ?? "Loading..."}
         </div>
 
         <Button
@@ -53,10 +52,6 @@ export function PreviewPanel({
         >
           <ArrowClockwiseIcon size={14} />
         </Button>
-
-        <div className="flex-1 rounded-md bg-muted px-3 py-1 text-xs text-muted-foreground truncate">
-          {url ?? "about:blank"}
-        </div>
       </div>
 
       {/* Preview area */}

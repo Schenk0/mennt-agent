@@ -63,7 +63,7 @@ export function getDisallowedDiscoveryCommandReason(command: string) {
   }
 
   if (isDisallowedLifecycleCommand(trimmed)) {
-    return "Do not run build/dev/start/watch/preview commands. Use targeted checks like `npm run check`, `npm run typecheck`, or `npm run lint`.";
+    return "Do not run build/dev/start/watch/preview commands. Use targeted checks like `pnpm run check`, `pnpm run typecheck`, or `pnpm run lint`.";
   }
 
   return null;

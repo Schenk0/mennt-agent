@@ -51,10 +51,10 @@ export default function Page() {
         await mountFiles(container, template);
         logToTerminal("Files mounted.\n");
 
-        logToTerminal("Running npm install...\n");
+        logToTerminal("Running pnpm install...\n");
         setBootState("installing");
         await installDependencies(container, (data) => logToTerminal(data));
-        logToTerminal("npm install complete.\n");
+        logToTerminal("pnpm install complete.\n");
 
         logToTerminal("Starting dev server...\n");
         setBootState("starting");

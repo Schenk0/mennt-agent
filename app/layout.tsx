@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mennt agent Demo",
+  title: "Mennt Agent Demo",
   description: "A demo of the Mennt agent",
 };
 

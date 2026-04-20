@@ -36,7 +36,7 @@ export async function installDependencies(
   container: WebContainer,
   onOutput?: (data: string) => void
 ) {
-  const process = await container.spawn("npm", ["install"]);
+  const process = await container.spawn("pnpm", ["install"]);
 
   process.output.pipeTo(
     new WritableStream({
@@ -49,7 +49,7 @@ export async function installDependencies(
   const exitCode = await process.exit;
 
   if (exitCode !== 0) {
-    throw new Error(`npm install failed with exit code ${exitCode}`);
+    throw new Error(`pnpm install failed with exit code ${exitCode}`);
   }
 }
 
@@ -57,7 +57,7 @@ export async function startDevServer(
   container: WebContainer,
   onOutput?: (data: string) => void
 ) {
-  const process = await container.spawn("npm", ["run", "dev"]);
+  const process = await container.spawn("pnpm", ["run", "dev"]);
 
   process.output.pipeTo(
     new WritableStream({

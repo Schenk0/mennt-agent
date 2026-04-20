@@ -12,7 +12,7 @@ export const runBashToolInput = z.object({
     .string()
     .min(1)
     .describe(
-      "Bash command to run from the project root, for example: npm run typecheck"
+      "Bash command to run from the project root, for example: pnpm run typecheck"
     ),
 });
 
