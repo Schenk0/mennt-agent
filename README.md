@@ -58,7 +58,7 @@ The template ships with Tailwind v3, ESLint (with `jsx-a11y` for accessibility),
 ### Installation
 
 ```bash
-git clone https://github.com/mennt-app/mennt-agent.git
+git clone https://github.com/Schenk0/mennt-agent.git
 cd mennt-agent
 pnpm install
 ```
